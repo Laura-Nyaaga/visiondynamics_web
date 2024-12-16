@@ -22,14 +22,18 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install Dependencies
+      - name: Install dependencies
+        working-directory: ./visiondynamics
         run: npm install
 
       - name: TypeScript Type Checking
+        working-directory: ./visiondynamics
         run: npm run type-check || exit 1
 
       - name: Run Linter
+        working-directory: ./visiondynamics
         run: npm run lint || exit 1
 
       - name: Build Next.js App
+        working-directory: ./visiondynamics
         run: npm run build || exit 1
