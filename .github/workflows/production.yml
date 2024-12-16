@@ -19,6 +19,7 @@ jobs:
           node-version: '22'
 
       - name: Install Dependencies
+        working-directory: ./visiondynamics
         run: npm install
 
       - name: Install Vercel CLI
