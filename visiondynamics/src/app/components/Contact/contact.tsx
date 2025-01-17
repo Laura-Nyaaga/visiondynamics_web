@@ -7,7 +7,7 @@ const ContactFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="contact">
       <div className="bg-[#6E7692] rounded-t-[20px] w-full px-4 py-12 md:py-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
           <div className="w-full md:w-1/2 flex justify-center md:justify-start">
@@ -42,7 +42,7 @@ const ContactFooter = () => {
         </div>
       </div>
 
-      <div className="bg-[#253688] w-full px-4 py-6">
+      <div className="bg-[#1b2450] w-full px-4 py-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex gap-6">
             <Link
@@ -58,7 +58,7 @@ const ContactFooter = () => {
               <FaInstagram size={24} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/vision-dynamics-a09aa033b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFYGd66uaTWqXQuryVDrJtw%3D%3D"
+              href="https://www.linkedin.com/in/vision-dynamics-a09aa033b"
               className="text-white hover:text-teal-400 transition-colors"
             >
               <FaLinkedinIn size={24} />

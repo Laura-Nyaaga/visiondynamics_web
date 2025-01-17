@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <section>
-      <nav className="relative text-[#253688] z-50 max-w-full px-4 md:px-8 lg:px-16 mx-16">
+      <nav className="relative text-[#253688] z-50 max-w-full pb-10 px-4 md:px-8 lg:px-16 mx-16">
         <div className="flex justify-between gap-7 items-center max-w-7xl">
-          <Link href="#logo">
+          <Link href="#home">
             <Image
               className="w-16 h-16 sm:w-20 sm:h-20 lg:w-[150px] lg:h-[150px] mr-10"
               src="/image/logo.png"
@@ -40,13 +40,13 @@ const Navbar = () => {
 
           <ul className="hidden lg:flex items-center gap-8 text-xl xl:text-2xl text-[#253688]">
             <li className="hover:text-[#84CBEB] active:text-[#84CBEB]">
-              <Link href="#about">Home</Link>
+              <Link href="#home">Home</Link>
             </li>
             <li className="hover:text-[#84CBEB] active:text-[#84CBEB]">
-              <Link href="#skills">Services</Link>
+              <Link href="#services">Services</Link>
             </li>
             <li className="hover:text-[#84CBEB] active:text-[#84CBEB]">
-              <Link href="#projects">About</Link>
+              <Link href="#about">About</Link>
             </li>
             <li className="hover:text-[#84CBEB] active:text-[#84CBEB]">
               <Link href="#contact">Contact Us</Link>

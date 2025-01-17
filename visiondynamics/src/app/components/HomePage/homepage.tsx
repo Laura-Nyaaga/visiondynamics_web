@@ -4,7 +4,7 @@ import React from "react";
 const HomePage = () => {
   return (
     <section>
-      <div className="bg-[#253688] text-white py-20 px-8 md:px-20 flex flex-col md:flex-row items-center gap-6 justify-between mx-16 rounded-2xl h-[100%]">
+      <div className="bg-[#1b2450] text-white py-20 px-8 md:px-20 flex flex-col md:flex-row items-center gap-6 justify-between mx-16 rounded-2xl h-[100%]" id="home">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold mb-4">
             Reliable Assistance, Outstanding Value.

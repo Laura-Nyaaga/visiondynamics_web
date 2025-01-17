@@ -16,22 +16,22 @@ const AboutUs = () => {
   const fullVisionText = "To be the leading provider of cutting-edge virtual assistant technology, enabling healthcare professionals to focus on what matters most - delivering exceptional patient care while achieving optimal operational efficiency.";
 
   return (
-    <div className="bg-white py-16 px-4">
+    <div className="bg-white py-16 px-4" id='about'>
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-[#3C5CA4] text-4xl md:text-5xl font-bold text-center mb-3">
+        <h1 className="text-black text-4xl md:text-5xl font-bold text-center mb-3">
           About Us
         </h1>
-        <h2 className="text-[#3C5CA4] text-xl md:text-2xl italic text-center mb-12">
+        <h2 className="text-black text-xl md:text-2xl italic text-center mb-12">
           "Why Vision Dynamics"
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 px-4">
+        <div className="grid md:grid-cols-2 gap-10 px-4">
           {/* Mission Card */}
           <div className="border-2 border-teal-400 rounded-lg p-6 hover:shadow-lg transition-shadow">
             <div className="flex flex-col items-center text-center">
               <BiTargetLock className="text-5xl text-[#3C5CA4] mb-4" />
-              <h3 className="text-[#3C5CA4] text-2xl font-bold mb-4">Mission</h3>
-              <p className="text-[#3C5CA4] text-lg mb-4">
+              <h3 className="text-black text-2xl font-bold mb-4">Mission</h3>
+              <p className="text-black text-lg mb-4">
                 {showFullMission ? fullMissionText : missionText}
               </p>
               <button
@@ -47,8 +47,8 @@ const AboutUs = () => {
           <div className="border-2 border-teal-400 rounded-lg p-6 hover:shadow-lg transition-shadow">
             <div className="flex flex-col items-center text-center">
               <FaEye className="text-5xl text-[#3C5CA4] mb-4" />
-              <h3 className="text-[#3C5CA4] text-2xl font-bold mb-4">Vision</h3>
-              <p className="text-[#3C5CA4] text-lg mb-4">
+              <h3 className="text-black text-2xl font-bold mb-4">Vision</h3>
+              <p className="text-black text-lg mb-4">
                 {showFullVision ? fullVisionText : visionText}
               </p>
               <button

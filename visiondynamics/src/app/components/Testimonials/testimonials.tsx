@@ -40,12 +40,12 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="bg-[#3C5CA4] py-16 px-4 min-h-[600px] flex flex-col items-center justify-center mx-16 rounded-lg">
+    <div className="bg-[#1b2450] py-16 px-4 min-h-[600px] flex flex-col items-center justify-center mx-16 rounded-lg">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-white text-4xl font-bold text-center mb-2">
+        <h2 className="text-white  text-4xl md:text-5xl font-bold text-center mb-2">
           Testimonials
         </h2>
-        <p className="text-white text-xl italic text-center mb-12">
+        <p className="text-white text-xl md:text-2xl italic text-center mb-12">
           "What Our Customers Have To Say"
         </p>
 
@@ -65,7 +65,7 @@ export default function Testimonials() {
             </div>
 
             <div className="flex-1 text-left">
-              <p className="text-black text-xl md:text-2xl mb-6">
+              <p className="text-black text-lg md:text-2xl mb-6">
                 "{testimonials[currentTestimonial].quote}"
               </p>
               <h4 className="text-black font-bold text-lg">

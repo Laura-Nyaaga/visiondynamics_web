@@ -104,10 +104,10 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="bg-white my-24 px-4 md:px-8 lg:px-16">
+    <section className="bg-white my-24 px-4 md:px-8 lg:px-16" id="services">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-4">Our Services</h2>
-        <p className="text-lg text-center mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Our Services</h2>
+        <p className="text-black text-xl md:text-2xl italic text-center mb-12">
           We Offer Reliable Assistance with an Outstanding Value.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -116,14 +116,14 @@ const ServicesSection = () => {
               key={index}
               className={`bg-transparent border-[#71C3DA] rounded-lg p-6 transition-transform duration-300 ${
                 expandedService === index
-                  ? "bg-yellow-900 text-white transform scale-105 !important"
-                  : "hover:bg-blue-900 hover:text-white bg-white text-black "
+                  ? "bg-[#1b2450] text-white text-lg mb-4 transform scale-105 !important"
+                  : "hover:bg-[#1b2450] hover:text-white text-lg mb-4 bg-white text-black "
               }`}
               onClick={() => handleServiceExpand(index)}
             >
               <div className="flex items-center mb-4">
                 <service.icon className="text-[#71C3DA] w-8 h-8 mr-4" />
-                <h3 className="text-xl font-bold">{service.title}</h3>
+                <h3 className="text-black text-2xl font-bold mb-4">{service.title}</h3>
               </div>
               <p>
                 {expandedService === index
@@ -133,7 +133,7 @@ const ServicesSection = () => {
                   <span>
                     {expandedService === index ? " " : "... "}
                     <button
-                      className="text-blue-500 hover:underline"
+                      className="text-blue-500 text-lg mb-4 hover:underline"
                       onClick={(e) => {
                         e.stopPropagation();
                         handleServiceExpand(index);
