@@ -44,6 +44,9 @@ const ContactFooter = () => {
 
       <div className="bg-[#1b2450] w-full px-4 py-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="text-white text-sm mt-4 md:mt-0">
+            © {currentYear} Vision Dynamics. All rights reserved.
+          </div>
           <div className="flex gap-6">
             <Link
               href="https://www.facebook.com/profile.php?id=61565631421869&mibextid=ZbWKwL"
@@ -66,15 +69,21 @@ const ContactFooter = () => {
           </div>
 
           <Link
+            href="/terms-of-service"
+            className="text-white hover:text-teal-400 transition-colors"
+          >
+            Terms Of Service
+          </Link>
+
+          <Link
             href="/privacy-policies"
             className="text-white hover:text-teal-400 transition-colors"
           >
             Privacy & Policies
           </Link>
 
-          <div className="text-white text-sm mt-4 md:mt-0">
-            © {currentYear} Vision Dynamics. All rights reserved.
-          </div>
+        
+
         </div>
       </div>
     </div>

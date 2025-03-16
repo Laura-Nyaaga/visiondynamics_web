@@ -116,7 +116,7 @@ const ServicesSection = () => {
               key={index}
               className={`bg-transparent border-[#71C3DA] rounded-lg p-6 transition-transform duration-300 ${
                 expandedService === index
-                  ? "bg-[#1b2450] text-white text-lg mb-4 transform scale-105 !important"
+                  ? "bg-[#1b2450] text-black text-lg mb-4 transform scale-105 !important"
                   : "hover:bg-[#1b2450] hover:text-white text-lg mb-4 bg-white text-black "
               }`}
               onClick={() => handleServiceExpand(index)}
