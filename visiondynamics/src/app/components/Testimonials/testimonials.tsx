@@ -65,7 +65,7 @@ export default function Testimonials() {
             </div>
 
             <div className="flex-1 text-left">
-              <p className="text-black text-lg md:text-2xl mb-6">
+              <p className="text-black text-xl md:text-0.5xl mb-6">
                 "{testimonials[currentTestimonial].quote}"
               </p>
               <h4 className="text-black font-bold text-lg">
