@@ -17,10 +17,17 @@ import {
 import { HiMicrophone } from "react-icons/hi";
 import { FaKeyboard } from "react-icons/fa";
 
-const ServicesSection = () => {
-  const [expandedService, setExpandedService] = useState(null);
+interface Service {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  title: string;
+  description: string;
+}
 
-  const services = [
+
+const ServicesSection: React.FC = () => {
+  const [expandedService, setExpandedService] = useState<number | null>(null);
+
+  const services: Service[] = [
     {
       icon: IoMdAnalytics,
       title: "Medical Research",
@@ -95,7 +102,7 @@ const ServicesSection = () => {
     },
   ];
 
-  const handleServiceExpand = (index: any) => {
+  const handleServiceExpand = (index: number) => {
     console.log(`Current Expanded Service: ${expandedService}`);
     setExpandedService(index === expandedService ? null : index);
     console.log(
