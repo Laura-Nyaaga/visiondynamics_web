@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vision Dynamics",
   description: "v/A Website",
-  icon:
+  icons:
     {
-      icon: "/image/logo.png"
+      icon: "/image/logo.png",
     },
 };
 
